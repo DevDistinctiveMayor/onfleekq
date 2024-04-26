@@ -1,0 +1,75 @@
+/* CSS for hamburger menu icon */
+@media screen and (max-width: 1250px) {
+    .hamburger-menu {
+      
+      position: relative;
+      cursor: pointer;
+      width: 30px;
+      height: 14px;
+      margin-top: 0.5rem;
+      margin-left: -3.5rem;
+      
+    }
+    
+    .hamburger-menu span {
+      display: block;
+      width: 60%;
+      height: 2px;
+      background-color: #270468;
+      position: absolute;
+      left: 0;
+      transition: all 0.3s ease;
+      margin-left: 0rem;
+    }
+    
+    .hamburger-menu span:nth-child(1) {
+      top: 0;
+    }
+    
+    .hamburger-menu span:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .hamburger-menu span:nth-child(3) {
+      bottom: 0;
+    }
+    
+    /* Animation for the hamburger icon */
+    .hamburger-menu.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    
+    .hamburger-menu.open span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .hamburger-menu.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    /* Display menu content in a column layout */
+    .menu-content {
+      display: none; /* Initially hide the menu content */
+      flex-direction: column; /* Display menu content in a column layout */
+      margin-top: 5%;
+    }
+    
+    /* Show the menu content when the menu is open */
+    .menu-content.open {
+      display: flex;
+      margin-top: 2.5rem;
+      margin-left: -4rem;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .hamburger-menu {
+        margin-top: 0.5rem;
+        margin-left: -5.6rem;
+        
+      }
+
+  }
+  

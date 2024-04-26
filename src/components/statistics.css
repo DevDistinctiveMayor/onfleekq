@@ -1,0 +1,31 @@
+.chart-container {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 2%;
+  width: 700px;
+  height: 355px;
+  
+}
+
+
+/* Apply styles when screen width is less than 1100px */
+@media screen and (max-width: 1100px) {
+  .chart-container {
+    width: 380px;
+    margin-left: 3%;
+    margin-top: 15%;
+    height: 320px;
+    
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .chart-container {
+    width: 310px;
+    margin-left: 3%;
+    margin-top: 15%;
+    height: 300px;
+    
+  }
+}
