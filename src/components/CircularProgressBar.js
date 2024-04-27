@@ -12,7 +12,7 @@ const Spinner = () => {
     let new_degrees = 0;
     let difference = 0;
     let color = "rgb(67 56 202)";
-    let bgcolor = "rgb(241 245 249)";
+    let bgcolor = "rgb(226 232 240)";
     let animation_loop, redraw_loop;
 
     function init() {
@@ -21,19 +21,19 @@ const Spinner = () => {
       ctx.beginPath();
       ctx.strokeStyle = bgcolor;
       ctx.lineWidth = 5;
-      ctx.arc(width / 2, width / 2, 65, 0, Math.PI * 2, false);
+      ctx.arc(width / 2, width / 2, 70, 0, Math.PI * 2, false);
       ctx.stroke();
       let radians = (degrees * Math.PI) / 180;
 
       ctx.beginPath();
       ctx.strokeStyle = color;
-      ctx.lineWidth = 5;
+      ctx.lineWidth = 4;
       ctx.arc(
         width / 2,
         height / 2,
-        65,
-        0 - 90 * Math.PI / 180,
-        radians - 90 * Math.PI / 180,
+        70,
+        0 - (90 * Math.PI) / 180,
+        radians - (90 * Math.PI) / 180,
         false
       );
       ctx.stroke();
@@ -43,7 +43,11 @@ const Spinner = () => {
       const percentageText = "%";
       const textWidth = ctx.measureText(numberText).width;
       const percentageWidth = ctx.measureText(percentageText).width;
-      ctx.fillText(numberText, width  / 2 - (textWidth + percentageWidth) / 2, height / 2 + 15);
+      ctx.fillText(
+        numberText,
+        width / 2 - (textWidth + percentageWidth) / 2,
+        height / 2 + 15
+      );
       ctx.font = "bold 20px arial"; // Adjust font size for percentage sign
       ctx.fillText(percentageText, width / 2 + textWidth / 6, height / 2 + 15);
     }
@@ -70,7 +74,9 @@ const Spinner = () => {
     };
   }, [canvasRef]);
 
-  return <canvas ref={canvasRef} id="spinner" width="280" height="280"></canvas>;
+  return (
+    <canvas ref={canvasRef} id="spinner" width="280" height="280"></canvas>
+  );
 };
 
 export default Spinner;

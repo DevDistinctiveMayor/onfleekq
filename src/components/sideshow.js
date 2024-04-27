@@ -29,7 +29,6 @@ function Sideshow() {
                 </div>
             </div>
         </div>
-
     );
 }
 

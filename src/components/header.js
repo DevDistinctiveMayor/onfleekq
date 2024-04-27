@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaSearch, FaWallet, FaRegBell, FaHome } from "react-icons/fa";
+import { FaSearch, FaWallet, FaBell, FaHome } from "react-icons/fa";
 import { RiPieChart2Fill } from "react-icons/ri";
 import { SiDeluge } from "react-icons/si";
 import { RiMessage2Fill } from "react-icons/ri";
@@ -20,7 +20,7 @@ function Header() {
   };
   return (
     <div id="header">
-      <div className="h-[65rem] bg-teal-100">
+      <div className="h-[65rem] bg-cyan-100">
         <div className="flex justify-center">
           <SiDeluge
             className="lg:hidden"
@@ -78,7 +78,7 @@ function Header() {
               />
             </div>
           </div>
-          <div className="bg-white lg:h-[57rem] lg:w-[70rem] mt-[3rem] -ml-[3rem] rounded-[30px] sm:w-[26rem] w-[22rem]">
+          <div className="lg:bg-white bg-blue-50 lg:h-[57rem] lg:w-[70rem] mt-[3rem] -ml-[3rem] rounded-[30px] sm:w-[26rem] w-[22rem]">
             <div className="flex ml-[16rem] lg:ml-[4rem] mt-7">
               <div className="hidden lg:block flex ">
                 <FaSearch
@@ -93,35 +93,38 @@ function Header() {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="w-[24rem] pl-10 h-[2rem] bg-slate-200 rounded-xl -ml-[10%] border-none outline-none"
+                  className="w-[24rem] pl-10 h-[2rem] bg-blue-50 rounded-xl -ml-[10%] border-none outline-none"
                 />
               </div>
               <div className="flex lg:gap-[20rem] sm:gap-[3rem]">
-              <div className="flex gap-3">
-    <label
-      
-      className={`hamburger-menu ${
-        menuVisible ? "open" : ""
-      }`}
-      onClick={toggleMenu}
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <div
-      className={`lg:flex gap-5 ml-[1rem] cursor-pointer font-medium menu-content  ${
-        menuVisible ? "open" : ""
-      }`}
-      onClick={toggleMenu}
-    ><a href="#">Feedback</a>
-      <a href="#">Contacts</a>
-      <a href="#">Help</a>
-    </div>
-  
+                <div className="flex gap-3">
+                  <label
+                    className={`hamburger-menu ${menuVisible ? "open" : ""}`}
+                    onClick={toggleMenu}
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                  <div
+                    className={`lg:flex gap-5 ml-[1rem] cursor-pointer font-medium menu-content  ${
+                      menuVisible ? "open" : ""
+                    }`}
+                    onClick={toggleMenu}
+                  >
+                    <a href="#">Feedback</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Help</a>
+                  </div>
                 </div>
                 <div className="flex gap-4 cursor-pointer">
-                  <FaRegBell style={{ color: "#646F67", fontSize: "1.3rem", marginTop: "0.4rem" }} />
+                  <FaBell
+                    style={{
+                      color: "#B2BEB5",
+                      fontSize: "1.3rem",
+                      marginTop: "0.4rem",
+                    }}
+                  />
                   <img src={img} className="w-7 h-7" alt="user" />
                 </div>
               </div>
