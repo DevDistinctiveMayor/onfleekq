@@ -78,7 +78,7 @@ function Header() {
               />
             </div>
           </div>
-          <div className="lg:bg-white bg-blue-50 lg:h-[57rem] lg:w-[70rem] mt-[3rem] -ml-[3rem] rounded-[30px] sm:w-[26rem] w-[22rem]">
+          <div className="lg:bg-blue-50 bg-blue-50 lg:h-[57rem] lg:w-[70rem] mt-[3rem] -ml-[3rem] rounded-[30px] sm:w-[26rem] w-[22rem]">
             <div className="flex ml-[16rem] lg:ml-[4rem] mt-7">
               <div className="hidden lg:block flex ">
                 <FaSearch
@@ -93,7 +93,7 @@ function Header() {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="w-[24rem] pl-10 h-[2rem] bg-blue-50 rounded-xl -ml-[10%] border-none outline-none"
+                  className="w-[24rem] pl-10 h-[2rem] bg-blue-100 rounded-xl -ml-[10%] border-none outline-none"
                 />
               </div>
               <div className="flex lg:gap-[20rem] sm:gap-[3rem]">

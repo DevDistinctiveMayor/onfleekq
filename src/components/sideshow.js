@@ -11,7 +11,7 @@ function Sideshow() {
 
     return (
         <div className="hidden lg:block">
-            <div className="bg-slate-200 h-[49rem] w-[21rem] -mt-[7rem] absolute rounded-2xl">
+            <div className="bg-blue-100 h-[49rem] w-[21rem] -mt-[7rem] absolute rounded-2xl">
                 <div className="mt-6 ml-[17rem]">
                     <FaPen style={iconStyle} />
                 </div>
