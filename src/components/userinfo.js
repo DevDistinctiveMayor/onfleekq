@@ -77,7 +77,7 @@ function userinfo() {
               <p>5 days ago</p>
             </div>
 
-            <div class="bg-indigo-700 w-[7rem] flex p-2 gap-3 rounded-full">
+            <div class="bg-indigo-800 w-[7rem] flex p-2 gap-3 rounded-full">
               <p class="text-white ml-3 text-sm">Connect</p>
               <FaAngleRight style={iconStyle3} />
             </div>

@@ -18,7 +18,7 @@ function footer() {
 
   return (
     <div class="block lg:hidden">
-      <div class="h-[4rem] mt-8 rounded-full bg-indigo-900">
+      <div class="h-[4rem] mt-8 rounded-full bg-indigo-800">
         <div class="flex justify-center gap-[2rem]">
           <div>
             <div class="bg-white absolute -ml-12 h-[2.4rem] w-[2.4rem] -mt-[1rem] rounded-lg z-10 shadow-slate-600 shadow-2xl">
