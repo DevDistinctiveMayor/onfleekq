@@ -21,17 +21,17 @@ function transactions() {
   };
   return (
     <div>
-      <div>
-        <div class="flex justify-around gap-[7rem] mt-10">
+      <div class="">
+        <div class="flex justify-around md:gap-[7rem] mt-10 gap-[3rem]">
           <p class="font-semibold">Transactions</p>
           <div class="bg-red-500 w-[2rem] flex justify-center h-[2rem] rounded-lg">
             <FaPlus style={iconStyle} />
           </div>
         </div>
 
-        <div class="mt-5">
+        <div class="mt-5 sm:ml-[2rem] lg:ml-0">
           <div class="flex gap-3 ml-3 mt-5">
-            <div class="bg-white w-[3rem] flex justify-center h-[2.7rem] rounded-lg ml-2">
+            <div class="bg-white sm:w-[3rem] w-[3rem] flex justify-center h-[2.7rem] rounded-lg ml-2">
               <FaTaxi style={iconStyle1} />
             </div>
             <div class="flex gap-[7.4rem]">
@@ -49,7 +49,7 @@ function transactions() {
             <div class="bg-white w-[3rem] flex justify-center h-[2.7rem] rounded-lg ml-2">
               <FaShoppingBag style={iconStyle1} />
             </div>
-            <div class="flex gap-[7rem]">
+            <div class="flex sm:gap-[7rem] gap-[6rem]">
               <div>
                 <p class="font-semibold">Shopping</p>
                 <p class="text-sm font-bold text-slate-400">01:21 PM</p>

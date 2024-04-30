@@ -10,7 +10,7 @@ function card() {
                 <h2 class="font-semibold">My card</h2>
                 <FaEllipsisH/>
             </div>
-            <div class="flex justify-center lg:mt-4 sm:mt-12 mt-5">
+            <div class="flex justify-center lg:mt-4 sm:mt-12 mt-3">
                 <img src={img} class="rounded-3xl lg:w-[17rem] lg:h-[10rem] sm:w-[22rem] w-[20rem] "/>
             </div>
         </div>
